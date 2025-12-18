@@ -42,6 +42,22 @@ namespace AxiomLoader
             Application.Current.Shutdown();
         }
 
+        private void DiscordButton_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+                {
+                    //FileName = "discordserverlink", // Replace with actual Discord server link
+                    UseShellExecute = true
+                });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Could not open Discord link: " + ex.Message);
+            }
+        }
+
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
             string username = UsernameBox.Text;

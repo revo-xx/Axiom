@@ -40,5 +40,14 @@
                 <Button Content="LOAD" HorizontalAlignment="Right" Width="70" Height="25" Click="LoadButton_Click" Tag="Minecraft" Background="{DynamicResource PrimaryColorBrush}" Foreground="White" BorderThickness="0" FontWeight="Bold" Cursor="Hand"/>
             </Grid>
         </Border>
+
+        <!-- Injection Status -->
+        <Border x:Name="StatusBorder" Background="#1a1a1a" Padding="15" CornerRadius="5" BorderBrush="#333" BorderThickness="1" Visibility="Collapsed">
+            <StackPanel>
+                <TextBlock x:Name="StatusTitle" Text="Injecting..." Foreground="White" FontWeight="Bold" Margin="0,0,0,10"/>
+                <ProgressBar x:Name="InjectionProgress" Height="10" Background="#0f0f0f" Foreground="{DynamicResource PrimaryColorBrush}" BorderThickness="0"/>
+                <TextBlock x:Name="StatusDetail" Text="Initializing..." Foreground="#b3b3b3" FontSize="10" Margin="0,5,0,0"/>
+            </StackPanel>
+        </Border>
     </StackPanel>
 </UserControl>

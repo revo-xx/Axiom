@@ -1,6 +1,7 @@
 using System;
 using System.Security.Cryptography;
 using System.Text;
+using System.Windows;
 using System.Windows.Controls;
 
 namespace AxiomLoader.Views
@@ -26,6 +27,12 @@ namespace AxiomLoader.Views
                 string hwid = BitConverter.ToString(hash).Replace("-", "").Substring(0, 16);
                 HwidText.Text = hwid;
             }
+        }
+
+        private void CopyHwid_Click(object sender, RoutedEventArgs e)
+        {
+            Clipboard.SetText(HwidText.Text);
+            MessageBox.Show("HWID copied to clipboard!", "Axiom Loader", MessageBoxButton.OK, MessageBoxImage.Information);
         }
     }
 }
