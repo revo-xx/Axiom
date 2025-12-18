@@ -1,0 +1,23 @@
+<UserControl x:Class="AxiomLoader.Views.NewsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="500">
+    <StackPanel Margin="20">
+        <TextBlock Text="Latest News" Foreground="White" FontSize="20" FontWeight="Bold" Margin="0,0,0,15"/>
+        <Border Background="#1a1a1a" Padding="10" CornerRadius="5" Margin="0,0,0,10">
+            <StackPanel>
+                <TextBlock Text="Update v2.1 Released" Foreground="{DynamicResource PrimaryColorBrush}" FontWeight="Bold"/>
+                <TextBlock Text="Added new bypass for latest patch." Foreground="#b3b3b3" FontSize="11" TextWrapping="Wrap"/>
+            </StackPanel>
+        </Border>
+        <Border Background="#1a1a1a" Padding="10" CornerRadius="5">
+            <StackPanel>
+                <TextBlock Text="Christmas Sale!" Foreground="#ff0055" FontWeight="Bold"/>
+                <TextBlock Text="Get 50% off on all lifetime subs." Foreground="#b3b3b3" FontSize="11" TextWrapping="Wrap"/>
+            </StackPanel>
+        </Border>
+    </StackPanel>
+</UserControl>

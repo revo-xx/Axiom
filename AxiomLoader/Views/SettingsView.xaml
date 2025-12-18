@@ -1,0 +1,23 @@
+<UserControl x:Class="AxiomLoader.Views.SettingsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="500">
+    <StackPanel Margin="20">
+        <TextBlock Text="Settings" Foreground="White" FontSize="20" FontWeight="Bold" Margin="0,0,0,15"/>
+        
+        <TextBlock Text="THEME COLOR" Foreground="{DynamicResource PrimaryColorBrush}" FontSize="10" FontWeight="Bold" Margin="0,0,0,10"/>
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,20">
+            <Button Width="30" Height="30" Background="#00d2ff" Margin="0,0,10,0" Click="ThemeButton_Click" Tag="#00d2ff" Cursor="Hand"/>
+            <Button Width="30" Height="30" Background="#ff0055" Margin="0,0,10,0" Click="ThemeButton_Click" Tag="#ff0055" Cursor="Hand"/>
+            <Button Width="30" Height="30" Background="#00ff88" Margin="0,0,10,0" Click="ThemeButton_Click" Tag="#00ff88" Cursor="Hand"/>
+            <Button Width="30" Height="30" Background="#ffcc00" Margin="0,0,10,0" Click="ThemeButton_Click" Tag="#ffcc00" Cursor="Hand"/>
+        </StackPanel>
+
+        <CheckBox Content="Auto-Inject" Foreground="White" Margin="0,0,0,10"/>
+        <CheckBox Content="Close on Load" Foreground="White" Margin="0,0,0,10" IsChecked="True"/>
+        <CheckBox Content="Stream Proof" Foreground="White" Margin="0,0,0,10"/>
+    </StackPanel>
+</UserControl>
